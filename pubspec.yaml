@@ -1,0 +1,46 @@
+name: gs_app
+description: "GS Citizen Management - Offline App for Grama Sevaka Officers"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  provider: ^6.1.2
+  image_picker: ^1.1.2
+  image: ^4.2.0
+  photo_view: ^0.15.0
+  pdf: ^3.11.1
+  printing: ^5.13.1
+  archive: ^3.6.1
+  path_provider: ^2.1.4
+  file_picker: ^8.1.2
+  permission_handler: ^11.3.1
+  shared_preferences: ^2.3.2
+  intl: ^0.19.0
+  flutter_staggered_animations: ^1.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1   # ✅ IMPORTANT ADD THIS
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+# ✅ IMPORTANT: this must be OUTSIDE flutter:
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icon.png"
